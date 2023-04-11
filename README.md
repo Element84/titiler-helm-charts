@@ -5,16 +5,22 @@ Helm's [documentation](https://helm.sh/docs) to get started.
 
 Once Helm has been set up correctly, add the repo as follows:
 
-  helm repo add <alias> https://element84.github.io/titiler-helm-charts/
+```bash
+helm repo add <alias> https://element84.github.io/titiler-helm-charts/
+```
 
-If you had already added this repo earlier, run `helm repo update` to retrieve
-the latest versions of the packages.  You can then run `helm search repo
-<alias>` to see the charts.
+where `<alias>` is a name that you want to use to refer to the repository locally. If you had already added this repo earlier, run `helm repo update` to retrieve the latest versions of the packages.
 
-To install the <chart-name> chart:
+You can then run `helm search repo <alias>` to see the charts.
 
-    helm install my-<chart-name> <alias>/<chart-name>
+To install the `<chart-name>` chart:
+
+```bash
+helm install my-<chart-name> <alias>/<chart-name>
+```
 
 To uninstall the chart:
 
-    helm delete my-<chart-name>
+```bash
+helm delete my-<chart-name>
+```
